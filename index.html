@@ -1,169 +1,1240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Engo Sweden</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<title>Professional Nail Scissors | ENGO SWEDEN</title>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f7fa;
-            color: #17202a;
-        }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        header {
-            background: #ffffff;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f8fa;
+    color: #102a43;
+}
 
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
-        nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #17202a;
-        }
+/* TOP BAR */
+.topbar {
+    background: #09263d;
+    color: white;
+    padding: 11px 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
 
-        .hero {
-            padding: 100px 8%;
-            text-align: center;
-            background: #eaf2f8;
-        }
+/* HEADER */
+header {
+    background: white;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+}
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #086b78;
+}
 
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 30px;
-        }
+.logo small {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 7px;
+    text-align: center;
+    color: #153b4d;
+}
 
-        .button {
-            display: inline-block;
-            padding: 14px 28px;
-            background: #17202a;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
+nav {
+    display: flex;
+    gap: 30px;
+    font-size: 15px;
+}
 
-        section {
-            padding: 70px 8%;
-            text-align: center;
-        }
+nav a:hover {
+    color: #087f8c;
+}
 
-        section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
 
-        .services {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 30px;
-        }
+/* BREADCRUMB */
+.breadcrumb {
+    color: #6b7280;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
 
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            width: 280px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-        }
+/* PRODUCT */
+.product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
 
-        footer {
-            background: #17202a;
-            color: white;
-            text-align: center;
-            padding: 25px;
-        }
+/* IMAGE */
+.image-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.06);
+    position: relative;
+}
 
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 36px;
-            }
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #087f8c;
+    color: white;
+    padding: 8px 13px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
 
-            nav {
-                display: none;
-            }
-        }
-    </style>
+.main-image {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* PRODUCT INFO */
+.product-info h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.rating {
+    color: #f5a623;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #092f4f;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* FEATURES */
+.quick-features {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.feature {
+    background: white;
+    padding: 15px 8px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.feature strong {
+    display: block;
+    margin-top: 7px;
+}
+
+/* BUY BOX */
+.buy-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.07);
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.qty-control {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.qty-control button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: #f4f5f6;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.qty-control span {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.buy-btn {
+    background: #073b63;
+}
+
+.buy-btn:hover {
+    background: #052d4c;
+}
+
+.whatsapp-btn {
+    background: #19a957;
+}
+
+.whatsapp-btn:hover {
+    background: #128c46;
+}
+
+/* DETAILS */
+.details {
+    margin-top: 35px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.05);
+}
+
+.details h2 {
+    margin-bottom: 20px;
+}
+
+.details ul {
+    padding-left: 20px;
+    line-height: 2;
+}
+
+/* CHECKOUT */
+.checkout {
+    margin-top: 35px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.05);
+}
+
+.checkout h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d6d9dc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.order-summary {
+    background: #f5f7f8;
+    padding: 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* SERVICES */
+.services {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.service {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.service h3 {
+    margin-bottom: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #09263d;
+    color: white;
+    margin-top: 50px;
+    padding: 45px 5%;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+footer h3 {
+    margin-bottom: 15px;
+}
+
+footer p,
+footer a {
+    color: #cbd5df;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #355064;
+    color: #cbd5df;
+}
+
+/* MOBILE */
+@media(max-width: 800px) {
+
+    .topbar {
+        display: none;
+    }
+
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .product {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .product-info h1 {
+        font-size: 30px;
+    }
+
+    .main-image {
+        height: 330px;
+    }
+
+    .quick-features {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .services {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 500px) {
+
+    .services,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-info h1 {
+        font-size: 27px;
+    }
+}
+</style>
 </head>
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+    <span>🚚 Free Shipping on orders over €100</span>
+    <span>✓ Trusted by Professionals</span>
+    <span>🛡 Sterilization Safe Products</span>
+</div>
+
+<!-- HEADER -->
 <header>
-    <div class="logo">Engo Sweden</div>
+
+    <div class="logo">
+        ENGO
+        <small>SWEDEN</small>
+    </div>
 
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
     </nav>
+
 </header>
 
-<section class="hero" id="home">
-    <h1>Welcome to Engo Sweden</h1>
-    <p>Professional solutions with quality and reliability.</p>
-    <a class="button" href="#contact">Contact Us</a>
-</section>
+<div class="container">
 
-<section id="about">
-    <h2>About Engo Sweden</h2>
-    <p>
-        Engo Sweden is committed to providing professional,
-        reliable and high-quality services to our customers.
-    </p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-
-    <div class="services">
-        <div class="card">
-            <h3>Professional Services</h3>
-            <p>Quality solutions designed for our customers.</p>
-        </div>
-
-        <div class="card">
-            <h3>Reliable Solutions</h3>
-            <p>We focus on reliability and customer satisfaction.</p>
-        </div>
-
-        <div class="card">
-            <h3>Customer Support</h3>
-            <p>We're here to help and answer your questions.</p>
-        </div>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        Home › Manicure Instruments › Professional Nail Scissors
     </div>
-</section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: your-email@example.com</p>
-</section>
+    <!-- PRODUCT -->
+    <section class="product">
 
+        <!-- PRODUCT IMAGE -->
+        <div class="image-box">
+
+            <div class="badge">
+                BEST SELLER
+            </div>
+
+            <img
+                src="product.jpg"
+                alt="Professional Nail Scissors"
+                class="main-image"
+                onerror="this.src='https://via.placeholder.com/700x500?text=ENGO+Nail+Scissors';"
+            >
+
+        </div>
+
+        <!-- PRODUCT INFORMATION -->
+        <div class="product-info">
+
+            <h1>
+                Professional Nail Scissors
+            </h1>
+
+            <div class="rating">
+                ★★★★★
+                <span style="color:#555;">
+                    Professional Grade
+                </span>
+            </div>
+
+            <div class="price">
+                €9.00
+            </div>
+
+            <p class="description">
+                Professional-grade nail scissors designed
+                for precise manicure work and accurate
+                correction of the free edge of the nail.
+            </p>
+
+            <!-- FEATURES -->
+            <div class="quick-features">
+
+                <div class="feature">
+                    🔩
+                    <strong>High Quality</strong>
+                    Stainless Steel
+                </div>
+
+                <div class="feature">
+                    🛡
+                    <strong>Sterilization</strong>
+                    Safe
+                </div>
+
+                <div class="feature">
+                    ✂️
+                    <strong>Professional</strong>
+                    Use
+                </div>
+
+                <div class="feature">
+                    ✓
+                    <strong>Precision</strong>
+                    Design
+                </div>
+
+            </div>
+
+            <!-- BUY BOX -->
+            <div class="buy-box">
+
+                <div class="quantity">
+
+                    <strong>
+                        Quantity
+                    </strong>
+
+                    <div class="qty-control">
+
+                        <button
+                            onclick="changeQuantity(-1)">
+                            −
+                        </button>
+
+                        <span id="quantity">
+                            1
+                        </span>
+
+                        <button
+                            onclick="changeQuantity(1)">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button
+                    class="btn buy-btn"
+                    onclick="buyNow()">
+
+                    🛒 BUY NOW
+
+                </button>
+
+                <button
+                    class="btn whatsapp-btn"
+                    onclick="orderWhatsApp()">
+
+                    💬 ORDER ON WHATSAPP
+
+                </button>
+
+                <p style="text-align:center;color:#666;font-size:13px;">
+                    🔒 Secure ordering
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCT DETAILS -->
+    <section class="details">
+
+        <h2>
+            Key Features
+        </h2>
+
+        <ul>
+
+            <li>
+                Straight, shortened handles for comfortable handling.
+            </li>
+
+            <li>
+                Strengthened wide blades to correct the free edge of the nail.
+            </li>
+
+            <li>
+                The curve of the blade follows the shape of the nail.
+            </li>
+
+            <li>
+                Professional multi-level manual sharpening.
+            </li>
+
+            <li>
+                Classic ring size for comfortable grip.
+            </li>
+
+            <li>
+                Stylish satin surface of the instrument.
+            </li>
+
+            <li>
+                Matte handles reduce light reflection.
+            </li>
+
+            <li>
+                High-alloy stainless steel.
+            </li>
+
+            <li>
+                Suitable for professional manicure procedures.
+            </li>
+
+        </ul>
+
+        <br>
+
+        <h2>
+            Sterilization & Disinfection
+        </h2>
+
+        <ul>
+
+            <li>
+                Resistant to dry-heat oven sterilization.
+            </li>
+
+            <li>
+                Suitable for autoclave sterilization.
+            </li>
+
+            <li>
+                Can be disinfected with appropriate professional agents.
+            </li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- CHECKOUT FORM -->
+    <section
+        class="checkout"
+        id="checkout">
+
+        <h2>
+            🛍 Order / Checkout
+        </h2>
+
+        <form
+            onsubmit="placeOrder(event)">
+
+            <div class="form-group">
+
+                <label>
+                    Full Name *
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your full name"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Email *
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    WhatsApp Number *
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your WhatsApp number"
+                    required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Shipping Address *
+                </label>
+
+                <textarea
+                    id="address"
+                    placeholder="Enter your complete shipping address"
+                    required></textarea>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Country *
+                </label>
+
+                <select
+                    id="country"
+                    required>
+
+                    <option value="">
+                        Select country
+                    </option>
+
+                    <option>
+                        Pakistan
+                    </option>
+
+                    <option>
+                        Sweden
+                    </option>
+
+                    <option>
+                        United Kingdom
+                    </option>
+
+                    <option>
+                        United States
+                    </option>
+
+                    <option>
+                        Germany
+                    </option>
+
+                    <option>
+                        France
+                    </option>
+
+                    <option>
+                        Italy
+                    </option>
+
+                    <option>
+                        Other
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    Order Notes
+                </label>
+
+                <textarea
+                    id="notes"
+                    placeholder="Any special instructions?"></textarea>
+
+            </div>
+
+
+            <!-- ORDER SUMMARY -->
+            <div class="order-summary">
+
+                <strong>
+                    Order Summary
+                </strong>
+
+                <p style="margin-top:12px;">
+
+                    Professional Nail Scissors ×
+
+                    <span id="summaryQuantity">
+                        1
+                    </span>
+
+                </p>
+
+                <div class="total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span>
+                        €<span id="total">
+                            9.00
+                        </span>
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="btn buy-btn"
+                type="submit">
+
+                🔒 PLACE ORDER
+
+            </button>
+
+            <p style="text-align:center;color:#777;font-size:13px;">
+
+                Your information is used only
+                to process your order.
+
+            </p>
+
+        </form>
+
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services">
+
+        <div class="service">
+
+            <h3>
+                🚚
+            </h3>
+
+            <h3>
+                Shipping
+            </h3>
+
+            <p>
+                Fast and reliable delivery.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <h3>
+                🔒
+            </h3>
+
+            <h3>
+                Secure
+            </h3>
+
+            <p>
+                Safe ordering process.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <h3>
+                ↩️
+            </h3>
+
+            <h3>
+                Easy Returns
+            </h3>
+
+            <p>
+                Contact us for return support.
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <h3>
+                💬
+            </h3>
+
+            <h3>
+                Support
+            </h3>
+
+            <p>
+                WhatsApp customer support.
+            </p>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Engo Sweden. All rights reserved.</p>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>
+                ENGO SWEDEN
+            </h3>
+
+            <p>
+                Professional surgical and manicure
+                instruments designed for precision.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <p>
+                <a href="#">
+                    Home
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    Products
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    About Us
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    Contact
+                </a>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Customer Service
+            </h3>
+
+            <p>
+                <a href="#">
+                    Shipping & Delivery
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    Returns & Refunds
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    Terms & Conditions
+                </a>
+            </p>
+
+            <p>
+                <a href="#">
+                    Privacy Policy
+                </a>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <p>
+                💬 0326 4437886
+            </p>
+
+            <p>
+                🌍 Sweden, Europe
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 ENGO SWEDEN.
+        All Rights Reserved.
+
+    </div>
+
 </footer>
+
+
+<script>
+
+/* =========================
+   PRODUCT SETTINGS
+========================= */
+
+const PRODUCT_NAME =
+    "Professional Nail Scissors";
+
+const PRODUCT_PRICE =
+    9.00;
+
+
+/*
+   YOUR WHATSAPP NUMBER
+   Pakistan country code = 92
+   Original number = 03264437886
+
+   WhatsApp format:
+   923264437886
+*/
+
+const WHATSAPP_NUMBER =
+    "923264437886";
+
+
+/* =========================
+   QUANTITY
+========================= */
+
+let quantity = 1;
+
+
+function changeQuantity(amount) {
+
+    quantity += amount;
+
+    if (quantity < 1) {
+        quantity = 1;
+    }
+
+    document.getElementById("quantity")
+        .innerText = quantity;
+
+    document.getElementById("summaryQuantity")
+        .innerText = quantity;
+
+    updateTotal();
+}
+
+
+/* =========================
+   UPDATE TOTAL
+========================= */
+
+function updateTotal() {
+
+    const total =
+        PRODUCT_PRICE * quantity;
+
+    document.getElementById("total")
+        .innerText =
+        total.toFixed(2);
+}
+
+
+/* =========================
+   BUY NOW
+========================= */
+
+function buyNow() {
+
+    document.getElementById("checkout")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+/* =========================
+   WHATSAPP ORDER
+========================= */
+
+function orderWhatsApp() {
+
+    const total =
+        PRODUCT_PRICE * quantity;
+
+    const message =
+        "Hello ENGO SWEDEN,%0A%0A" +
+
+        "I want to order:%0A" +
+
+        "Product: " +
+        PRODUCT_NAME +
+        "%0A" +
+
+        "Quantity: " +
+        quantity +
+        "%0A" +
+
+        "Total: €" +
+        total.toFixed(2) +
+        "%0A%0A" +
+
+        "Please provide ordering and shipping details.";
+
+
+    window.open(
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        message,
+        "_blank"
+    );
+}
+
+
+/* =========================
+   CHECKOUT ORDER
+========================= */
+
+function placeOrder(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name")
+        .value;
+
+    const email =
+        document.getElementById("email")
+        .value;
+
+    const phone =
+        document.getElementById("phone")
+        .value;
+
+    const address =
+        document.getElementById("address")
+        .value;
+
+    const country =
+        document.getElementById("country")
+        .value;
+
+    const notes =
+        document.getElementById("notes")
+        .value;
+
+
+    const total =
+        PRODUCT_PRICE * quantity;
+
+
+    const message =
+
+        "NEW ORDER - ENGO SWEDEN%0A%0A" +
+
+        "PRODUCT DETAILS%0A" +
+
+        "Product: " +
+        PRODUCT_NAME +
+        "%0A" +
+
+        "Quantity: " +
+        quantity +
+        "%0A" +
+
+        "Total: €" +
+        total.toFixed(2) +
+        "%0A%0A" +
+
+        "CUSTOMER DETAILS%0A" +
+
+        "Name: " +
+        name +
+        "%0A" +
+
+        "Email: " +
+        email +
+        "%0A" +
+
+        "WhatsApp: " +
+        phone +
+        "%0A" +
+
+        "Country: " +
+        country +
+        "%0A" +
+
+        "Address: " +
+        address +
+        "%0A" +
+
+        "Notes: " +
+        notes;
+
+
+    window.open(
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        message,
+        "_blank"
+    );
+
+}
+
+</script>
 
 </body>
 </html>
