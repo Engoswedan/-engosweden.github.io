@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Professional Nail Scissors | ENGO SWEDEN</title>
+<title>ENGO SWEDEN | Professional Nail Scissors</title>
 
 <style>
 * {
@@ -15,7 +15,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f6f8fa;
+    background: #f5f7f9;
     color: #102a43;
 }
 
@@ -24,48 +24,52 @@ a {
     color: inherit;
 }
 
+/* TOP BAR */
 .topbar {
-    background: #09263d;
+    background: #082b45;
     color: white;
-    padding: 11px 5%;
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
+    font-size: 13px;
 }
 
+/* HEADER */
 header {
     background: white;
-    padding: 20px 5%;
+    padding: 18px 5%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #e5e7eb;
 }
 
 .logo {
-    font-size: 30px;
+    color: #087b83;
+    font-size: 29px;
     font-weight: bold;
     letter-spacing: 3px;
-    color: #086b78;
 }
 
 .logo small {
     display: block;
-    font-size: 11px;
-    letter-spacing: 7px;
     text-align: center;
-    color: #153b4d;
+    font-size: 10px;
+    letter-spacing: 7px;
+    color: #17394d;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 28px;
+    font-size: 15px;
 }
 
 nav a:hover {
-    color: #087f8c;
+    color: #087b83;
 }
 
+/* MAIN */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -73,30 +77,32 @@ nav a:hover {
 }
 
 .breadcrumb {
-    color: #6b7280;
+    color: #777;
     font-size: 14px;
     margin-bottom: 25px;
 }
 
+/* PRODUCT */
 .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 45px;
 }
 
+/* IMAGE */
 .image-box {
     background: white;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 25px;
-    box-shadow: 0 3px 15px rgba(0,0,0,.06);
     position: relative;
+    box-shadow: 0 3px 18px rgba(0,0,0,.06);
 }
 
 .badge {
     position: absolute;
     top: 20px;
     right: 20px;
-    background: #087f8c;
+    background: #087b83;
     color: white;
     padding: 8px 13px;
     border-radius: 6px;
@@ -108,21 +114,21 @@ nav a:hover {
     width: 100%;
     height: 450px;
     object-fit: contain;
-    border-radius: 10px;
 }
 
+/* PRODUCT INFO */
 .product-info h1 {
     font-size: 38px;
     margin-bottom: 15px;
 }
 
 .rating {
-    color: #f5a623;
+    color: #f2a900;
     margin-bottom: 15px;
 }
 
 .price {
-    font-size: 32px;
+    font-size: 34px;
     font-weight: bold;
     color: #092f4f;
     margin-bottom: 15px;
@@ -134,7 +140,8 @@ nav a:hover {
     margin-bottom: 25px;
 }
 
-.quick-features {
+/* FEATURES */
+.features {
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px;
@@ -143,18 +150,19 @@ nav a:hover {
 
 .feature {
     background: white;
-    padding: 15px 8px;
-    text-align: center;
-    border-radius: 8px;
-    font-size: 12px;
     border: 1px solid #e5e7eb;
+    padding: 15px 8px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 12px;
 }
 
 .feature strong {
     display: block;
-    margin-top: 7px;
+    margin-top: 6px;
 }
 
+/* BUY BOX */
 .buy-box {
     background: white;
     padding: 22px;
@@ -162,30 +170,30 @@ nav a:hover {
     box-shadow: 0 3px 15px rgba(0,0,0,.07);
 }
 
-.quantity {
+.quantity-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 18px;
 }
 
-.qty-control {
+.quantity {
     display: flex;
     border: 1px solid #ddd;
-    border-radius: 6px;
+    border-radius: 7px;
     overflow: hidden;
 }
 
-.qty-control button {
+.quantity button {
     width: 42px;
     height: 42px;
     border: none;
-    background: #f4f5f6;
+    background: #f0f2f4;
     font-size: 20px;
     cursor: pointer;
 }
 
-.qty-control span {
+.quantity span {
     width: 45px;
     display: flex;
     justify-content: center;
@@ -220,10 +228,11 @@ nav a:hover {
     background: #128c46;
 }
 
+/* DETAILS */
 .details,
 .checkout {
-    margin-top: 35px;
     background: white;
+    margin-top: 35px;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 3px 15px rgba(0,0,0,.05);
@@ -235,18 +244,19 @@ nav a:hover {
 }
 
 .details ul {
-    padding-left: 20px;
+    padding-left: 22px;
     line-height: 2;
 }
 
+/* FORM */
 .form-group {
     margin-bottom: 17px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 7px;
     font-weight: bold;
+    margin-bottom: 7px;
     font-size: 14px;
 }
 
@@ -255,8 +265,8 @@ nav a:hover {
 .form-group select {
     width: 100%;
     padding: 13px;
-    border: 1px solid #d6d9dc;
-    border-radius: 6px;
+    border: 1px solid #d5d9dd;
+    border-radius: 7px;
     font-size: 15px;
 }
 
@@ -265,13 +275,12 @@ nav a:hover {
     resize: vertical;
 }
 
-/* PAYMENT OPTIONS */
-
+/* PAYMENT */
 .payment-title {
-    margin-top: 25px;
-    margin-bottom: 12px;
-    font-size: 18px;
+    font-size: 19px;
     font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 13px;
 }
 
 .payment-options {
@@ -281,51 +290,50 @@ nav a:hover {
 }
 
 .payment-option {
-    border: 2px solid #e1e5e8;
+    border: 2px solid #e0e4e7;
+    padding: 16px;
     border-radius: 10px;
-    padding: 15px;
     cursor: pointer;
-    transition: .2s;
     background: white;
 }
 
 .payment-option:hover {
-    border-color: #087f8c;
+    border-color: #087b83;
+}
+
+.payment-option:has(input:checked) {
+    border-color: #087b83;
+    background: #f1fafa;
 }
 
 .payment-option input {
     margin-right: 8px;
 }
 
-.payment-option strong {
-    font-size: 15px;
-}
-
 .payment-icon {
-    font-size: 24px;
-    margin-right: 7px;
+    font-size: 22px;
 }
 
 .payment-description {
     display: block;
+    margin-top: 7px;
+    margin-left: 28px;
     color: #777;
     font-size: 12px;
-    margin-top: 7px;
-    margin-left: 29px;
 }
 
 .payment-info {
     display: none;
-    margin-top: 15px;
-    background: #f2f7f8;
-    border-radius: 8px;
+    background: #f0f7f8;
     padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
     line-height: 1.6;
-    font-size: 14px;
 }
 
-.order-summary {
-    background: #f5f7f8;
+/* SUMMARY */
+.summary {
+    background: #f4f6f7;
     padding: 18px;
     border-radius: 8px;
     margin: 20px 0;
@@ -334,18 +342,12 @@ nav a:hover {
 .total {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: bold;
     margin-top: 12px;
 }
 
-.security {
-    text-align: center;
-    color: #777;
-    font-size: 13px;
-    margin-top: 10px;
-}
-
+/* SERVICES */
 .services {
     margin-top: 35px;
     display: grid;
@@ -364,8 +366,9 @@ nav a:hover {
     margin-bottom: 8px;
 }
 
+/* FOOTER */
 footer {
-    background: #09263d;
+    background: #082b45;
     color: white;
     margin-top: 50px;
     padding: 45px 5%;
@@ -392,14 +395,13 @@ footer a {
 
 .copyright {
     text-align: center;
-    margin-top: 35px;
-    padding-top: 20px;
     border-top: 1px solid #355064;
+    padding-top: 20px;
+    margin-top: 35px;
     color: #cbd5df;
 }
 
 /* MOBILE */
-
 @media(max-width:800px) {
 
     .topbar {
@@ -416,19 +418,18 @@ footer a {
 
     .product {
         grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .product-info h1 {
-        font-size: 30px;
     }
 
     .main-image {
         height: 330px;
     }
 
-    .quick-features {
-        grid-template-columns: repeat(2,1fr);
+    .product-info h1 {
+        font-size: 30px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
     }
 
     .payment-options {
@@ -461,20 +462,13 @@ footer a {
 <body>
 
 <!-- TOP BAR -->
-
 <div class="topbar">
-
-    <span>🚚 Free Shipping on orders over €100</span>
-
-    <span>✓ Trusted by Professionals</span>
-
-    <span>🛡 Sterilization Safe Products</span>
-
+    <span>🚚 Fast Delivery</span>
+    <span>✓ Professional Products</span>
+    <span>🛡 Secure Ordering</span>
 </div>
 
-
 <!-- HEADER -->
-
 <header>
 
     <div class="logo">
@@ -483,17 +477,14 @@ footer a {
     </div>
 
     <nav>
-
         <a href="#">Home</a>
         <a href="#">Products</a>
         <a href="#">Categories</a>
         <a href="#">About Us</a>
-        <a href="#">Contact</a>
-
+        <a href="#checkout">Checkout</a>
     </nav>
 
 </header>
-
 
 <div class="container">
 
@@ -501,27 +492,25 @@ footer a {
         Home › Manicure Instruments › Professional Nail Scissors
     </div>
 
-
     <!-- PRODUCT -->
-
     <section class="product">
 
+        <!-- PRODUCT IMAGE -->
         <div class="image-box">
 
             <div class="badge">
-                BEST SELLER
+                PROFESSIONAL
             </div>
 
             <img
                 src="product.jpg"
                 alt="Professional Nail Scissors"
                 class="main-image"
-                onerror="this.src='https://via.placeholder.com/700x500?text=ENGO+Nail+Scissors';"
             >
 
         </div>
 
-
+        <!-- PRODUCT INFORMATION -->
         <div class="product-info">
 
             <h1>
@@ -536,7 +525,7 @@ footer a {
             </div>
 
             <div class="price">
-                €9.00
+                PKR 2,500
             </div>
 
             <p class="description">
@@ -545,8 +534,8 @@ footer a {
                 correction of the free edge of the nail.
             </p>
 
-
-            <div class="quick-features">
+            <!-- FEATURES -->
+            <div class="features">
 
                 <div class="feature">
                     🔩
@@ -574,18 +563,20 @@ footer a {
 
             </div>
 
-
+            <!-- BUY BOX -->
             <div class="buy-box">
 
-                <div class="quantity">
+                <div class="quantity-row">
 
                     <strong>
                         Quantity
                     </strong>
 
-                    <div class="qty-control">
+                    <div class="quantity">
 
-                        <button onclick="changeQuantity(-1)">
+                        <button
+                            type="button"
+                            onclick="changeQuantity(-1)">
                             −
                         </button>
 
@@ -593,7 +584,9 @@ footer a {
                             1
                         </span>
 
-                        <button onclick="changeQuantity(1)">
+                        <button
+                            type="button"
+                            onclick="changeQuantity(1)">
                             +
                         </button>
 
@@ -601,8 +594,8 @@ footer a {
 
                 </div>
 
-
                 <button
+                    type="button"
                     class="btn buy-btn"
                     onclick="buyNow()">
 
@@ -610,8 +603,8 @@ footer a {
 
                 </button>
 
-
                 <button
+                    type="button"
                     class="btn whatsapp-btn"
                     onclick="orderWhatsApp()">
 
@@ -619,7 +612,7 @@ footer a {
 
                 </button>
 
-                <p class="security">
+                <p style="text-align:center;color:#777;font-size:13px;">
                     🔒 Secure ordering
                 </p>
 
@@ -629,13 +622,11 @@ footer a {
 
     </section>
 
-
     <!-- PRODUCT DETAILS -->
-
     <section class="details">
 
         <h2>
-            Key Features
+            Product Details
         </h2>
 
         <ul>
@@ -661,7 +652,7 @@ footer a {
             </li>
 
             <li>
-                Stylish satin surface of the instrument.
+                Stylish satin surface.
             </li>
 
             <li>
@@ -673,7 +664,7 @@ footer a {
             </li>
 
             <li>
-                Suitable for professional manicure procedures.
+                Suitable for professional manicure use.
             </li>
 
         </ul>
@@ -695,30 +686,25 @@ footer a {
             </li>
 
             <li>
-                Can be disinfected with appropriate professional agents.
+                Can be disinfected using appropriate professional agents.
             </li>
 
         </ul>
 
     </section>
 
-
     <!-- CHECKOUT -->
-
     <section
         class="checkout"
         id="checkout">
 
         <h2>
-            🛍 Order / Checkout
+            🛍 Checkout
         </h2>
-
 
         <form onsubmit="placeOrder(event)">
 
-
             <!-- NAME -->
-
             <div class="form-group">
 
                 <label>
@@ -733,9 +719,7 @@ footer a {
 
             </div>
 
-
             <!-- EMAIL -->
-
             <div class="form-group">
 
                 <label>
@@ -749,9 +733,7 @@ footer a {
 
             </div>
 
-
             <!-- PHONE -->
-
             <div class="form-group">
 
                 <label>
@@ -761,91 +743,48 @@ footer a {
                 <input
                     type="tel"
                     id="phone"
-                    placeholder="Enter your phone number"
+                    placeholder="03XXXXXXXXX"
                     required>
 
             </div>
 
-
             <!-- ADDRESS -->
-
             <div class="form-group">
 
                 <label>
-                    Shipping Address *
+                    Delivery Address *
                 </label>
 
                 <textarea
                     id="address"
-                    placeholder="Enter your complete shipping address"
+                    placeholder="Enter your complete delivery address"
                     required></textarea>
 
             </div>
 
-
-            <!-- COUNTRY -->
-
+            <!-- CITY -->
             <div class="form-group">
 
                 <label>
-                    Country *
+                    City *
                 </label>
 
-                <select id="country" required>
-
-                    <option value="">
-                        Select country
-                    </option>
-
-                    <option>
-                        Pakistan
-                    </option>
-
-                    <option>
-                        Sweden
-                    </option>
-
-                    <option>
-                        United Kingdom
-                    </option>
-
-                    <option>
-                        United States
-                    </option>
-
-                    <option>
-                        Germany
-                    </option>
-
-                    <option>
-                        France
-                    </option>
-
-                    <option>
-                        Italy
-                    </option>
-
-                    <option>
-                        Other
-                    </option>
-
-                </select>
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter your city"
+                    required>
 
             </div>
 
-
             <!-- PAYMENT -->
-
             <div class="payment-title">
                 💳 Select Payment Method
             </div>
 
-
             <div class="payment-options">
 
-
                 <!-- EASYPAISA -->
-
                 <label class="payment-option">
 
                     <input
@@ -864,14 +803,12 @@ footer a {
                     </strong>
 
                     <span class="payment-description">
-                        Pay using Easypaisa
+                        Pay with Easypaisa
                     </span>
 
                 </label>
 
-
                 <!-- JAZZCASH -->
-
                 <label class="payment-option">
 
                     <input
@@ -889,14 +826,12 @@ footer a {
                     </strong>
 
                     <span class="payment-description">
-                        Pay using JazzCash
+                        Pay with JazzCash
                     </span>
 
                 </label>
 
-
                 <!-- CARD -->
-
                 <label class="payment-option">
 
                     <input
@@ -919,9 +854,7 @@ footer a {
 
                 </label>
 
-
                 <!-- COD -->
-
                 <label class="payment-option">
 
                     <input
@@ -939,24 +872,19 @@ footer a {
                     </strong>
 
                     <span class="payment-description">
-                        Pay when your order arrives
+                        Pay when delivered
                     </span>
 
                 </label>
 
             </div>
 
-
-            <!-- PAYMENT INFORMATION -->
-
             <div
                 id="paymentInfo"
                 class="payment-info">
             </div>
 
-
             <!-- NOTES -->
-
             <div class="form-group">
 
                 <label>
@@ -969,25 +897,19 @@ footer a {
 
             </div>
 
-
             <!-- SUMMARY -->
-
-            <div class="order-summary">
+            <div class="summary">
 
                 <strong>
                     Order Summary
                 </strong>
 
                 <p style="margin-top:12px;">
-
                     Professional Nail Scissors ×
-
                     <span id="summaryQuantity">
                         1
                     </span>
-
                 </p>
-
 
                 <div class="total">
 
@@ -996,8 +918,9 @@ footer a {
                     </span>
 
                     <span>
-                        €<span id="total">
-                            9.00
+                        PKR
+                        <span id="total">
+                            2,500
                         </span>
                     </span>
 
@@ -1005,95 +928,54 @@ footer a {
 
             </div>
 
-
             <button
                 class="btn buy-btn"
                 type="submit">
 
-                🔒 PLACE ORDER
+                🛒 PLACE ORDER
 
             </button>
 
-
-            <p class="security">
-                Your order will be sent securely to our WhatsApp.
+            <p style="text-align:center;color:#777;font-size:13px;">
+                Order details will be sent to our WhatsApp.
             </p>
 
         </form>
 
     </section>
 
-
     <!-- SERVICES -->
-
     <section class="services">
 
         <div class="service">
-
             <h3>🚚</h3>
-
-            <h3>
-                Shipping
-            </h3>
-
-            <p>
-                Fast and reliable delivery.
-            </p>
-
+            <h3>Delivery</h3>
+            <p>Reliable delivery service.</p>
         </div>
 
-
         <div class="service">
-
-            <h3>🔒</h3>
-
-            <h3>
-                Secure
-            </h3>
-
-            <p>
-                Safe ordering process.
-            </p>
-
+            <h3>💳</h3>
+            <h3>Payment</h3>
+            <p>Multiple payment options.</p>
         </div>
 
-
         <div class="service">
-
-            <h3>↩️</h3>
-
-            <h3>
-                Easy Returns
-            </h3>
-
-            <p>
-                Contact us for return support.
-            </p>
-
+            <h3>🛡</h3>
+            <h3>Quality</h3>
+            <p>Professional instruments.</p>
         </div>
 
-
         <div class="service">
-
             <h3>💬</h3>
-
-            <h3>
-                Support
-            </h3>
-
-            <p>
-                WhatsApp customer support.
-            </p>
-
+            <h3>Support</h3>
+            <p>WhatsApp customer support.</p>
         </div>
 
     </section>
 
 </div>
 
-
 <!-- FOOTER -->
-
 <footer>
 
     <div class="footer-grid">
@@ -1110,7 +992,6 @@ footer a {
             </p>
 
         </div>
-
 
         <div>
 
@@ -1131,19 +1012,12 @@ footer a {
             </p>
 
             <p>
-                <a href="#">
-                    About Us
-                </a>
-            </p>
-
-            <p>
-                <a href="#">
-                    Contact
+                <a href="#checkout">
+                    Checkout
                 </a>
             </p>
 
         </div>
-
 
         <div>
 
@@ -1152,36 +1026,27 @@ footer a {
             </h3>
 
             <p>
-                <a href="#">
-                    Shipping & Delivery
-                </a>
+                Shipping & Delivery
             </p>
 
             <p>
-                <a href="#">
-                    Returns & Refunds
-                </a>
+                Returns & Refunds
             </p>
 
             <p>
-                <a href="#">
-                    Terms & Conditions
-                </a>
+                Terms & Conditions
             </p>
 
             <p>
-                <a href="#">
-                    Privacy Policy
-                </a>
+                Privacy Policy
             </p>
 
         </div>
 
-
         <div>
 
             <h3>
-                Contact Us
+                Contact
             </h3>
 
             <p>
@@ -1189,46 +1054,54 @@ footer a {
             </p>
 
             <p>
-                🌍 Sweden, Europe
+                📱 WhatsApp Available
             </p>
 
         </div>
 
     </div>
 
-
     <div class="copyright">
-
-        © 2026 ENGO SWEDEN.
-        All Rights Reserved.
-
+        © 2026 ENGO SWEDEN. All Rights Reserved.
     </div>
 
 </footer>
 
-
 <script>
 
-/* ================================
+/* =====================================
    PRODUCT SETTINGS
-================================ */
+===================================== */
 
 const PRODUCT_NAME =
     "Professional Nail Scissors";
 
-const PRODUCT_PRICE =
-    9.00;
+/*
+   PRODUCT PRICE IN PKR
+
+   CURRENT PRICE = PKR 2,500
+
+   Change 2500 if you want another price.
+*/
+
+const PRODUCT_PRICE = 2500;
 
 
-/* YOUR WHATSAPP NUMBER */
+/*
+   YOUR WHATSAPP NUMBER
+
+   03264437886
+   becomes:
+   923264437886
+*/
 
 const WHATSAPP_NUMBER =
     "923264437886";
 
 
-/* ================================
+/* =====================================
    QUANTITY
-================================ */
+===================================== */
 
 let quantity = 1;
 
@@ -1251,9 +1124,9 @@ function changeQuantity(amount) {
 }
 
 
-/* ================================
-   TOTAL
-================================ */
+/* =====================================
+   UPDATE TOTAL
+===================================== */
 
 function updateTotal() {
 
@@ -1262,13 +1135,13 @@ function updateTotal() {
 
     document.getElementById("total")
         .innerText =
-        total.toFixed(2);
+        total.toLocaleString("en-PK");
 }
 
 
-/* ================================
+/* =====================================
    BUY NOW
-================================ */
+===================================== */
 
 function buyNow() {
 
@@ -1280,9 +1153,9 @@ function buyNow() {
 }
 
 
-/* ================================
+/* =====================================
    PAYMENT INFORMATION
-================================ */
+===================================== */
 
 function showPaymentInfo() {
 
@@ -1296,7 +1169,9 @@ function showPaymentInfo() {
 
 
     if (!selected) {
+
         info.style.display = "none";
+
         return;
     }
 
@@ -1305,9 +1180,9 @@ function showPaymentInfo() {
 
         info.innerHTML =
             "<strong>🟢 Easypaisa</strong><br>" +
-            "After placing your order, " +
-            "we will contact you on WhatsApp " +
-            "with the payment instructions.";
+            "Easypaisa online payment will require " +
+            "an official merchant payment gateway. " +
+            "Do not enter your Easypaisa PIN on this website.";
 
     }
 
@@ -1316,9 +1191,9 @@ function showPaymentInfo() {
 
         info.innerHTML =
             "<strong>🟢 JazzCash</strong><br>" +
-            "After placing your order, " +
-            "we will contact you on WhatsApp " +
-            "with the payment instructions.";
+            "JazzCash online payment will require " +
+            "an official merchant payment gateway. " +
+            "Do not enter your JazzCash PIN on this website.";
 
     }
 
@@ -1328,8 +1203,7 @@ function showPaymentInfo() {
         info.innerHTML =
             "<strong>💳 Credit / Debit Card</strong><br>" +
             "Card payments require a secure payment gateway. " +
-            "You will receive the secure payment instructions " +
-            "after placing your order.";
+            "Never enter card details directly into this GitHub page.";
 
     }
 
@@ -1338,8 +1212,7 @@ function showPaymentInfo() {
 
         info.innerHTML =
             "<strong>💵 Cash on Delivery</strong><br>" +
-            "Pay when your order is delivered, " +
-            "subject to delivery availability.";
+            "Pay when your order is delivered.";
 
     }
 
@@ -1348,9 +1221,9 @@ function showPaymentInfo() {
 }
 
 
-/* ================================
+/* =====================================
    WHATSAPP QUICK ORDER
-================================ */
+===================================== */
 
 function orderWhatsApp() {
 
@@ -1361,7 +1234,7 @@ function orderWhatsApp() {
     const message =
         "Hello ENGO SWEDEN,%0A%0A" +
 
-        "I want to order:%0A" +
+        "I want to order:%0A%0A" +
 
         "Product: " +
         PRODUCT_NAME +
@@ -1371,11 +1244,11 @@ function orderWhatsApp() {
         quantity +
         "%0A" +
 
-        "Total: €" +
-        total.toFixed(2) +
+        "Total: PKR " +
+        total.toLocaleString("en-PK") +
         "%0A%0A" +
 
-        "Please provide ordering and payment details.";
+        "Please provide payment and delivery details.";
 
 
     window.open(
@@ -1388,9 +1261,9 @@ function orderWhatsApp() {
 }
 
 
-/* ================================
-   CHECKOUT
-================================ */
+/* =====================================
+   PLACE ORDER
+===================================== */
 
 function placeOrder(event) {
 
@@ -1399,33 +1272,47 @@ function placeOrder(event) {
 
     const name =
         document.getElementById("name")
-        .value;
+        .value.trim();
 
     const email =
         document.getElementById("email")
-        .value;
+        .value.trim();
 
     const phone =
         document.getElementById("phone")
-        .value;
+        .value.trim();
 
     const address =
         document.getElementById("address")
-        .value;
+        .value.trim();
 
-    const country =
-        document.getElementById("country")
-        .value;
+    const city =
+        document.getElementById("city")
+        .value.trim();
 
     const notes =
         document.getElementById("notes")
-        .value;
+        .value.trim();
+
+
+    const paymentElement =
+        document.querySelector(
+            'input[name="payment"]:checked'
+        );
+
+
+    if (!paymentElement) {
+
+        alert(
+            "Please select a payment method."
+        );
+
+        return;
+    }
 
 
     const payment =
-        document.querySelector(
-            'input[name="payment"]:checked'
-        ).value;
+        paymentElement.value;
 
 
     const total =
@@ -1436,7 +1323,11 @@ function placeOrder(event) {
 
         "🛍 NEW ORDER - ENGO SWEDEN%0A%0A" +
 
+        "━━━━━━━━━━━━━━%0A" +
+
         "PRODUCT%0A" +
+
+        "━━━━━━━━━━━━━━%0A" +
 
         "Product: " +
         PRODUCT_NAME +
@@ -1446,8 +1337,8 @@ function placeOrder(event) {
         quantity +
         "%0A" +
 
-        "Total: €" +
-        total.toFixed(2) +
+        "Total: PKR " +
+        total.toLocaleString("en-PK") +
         "%0A%0A" +
 
         "PAYMENT METHOD%0A" +
@@ -1455,7 +1346,11 @@ function placeOrder(event) {
         payment +
         "%0A%0A" +
 
+        "━━━━━━━━━━━━━━%0A" +
+
         "CUSTOMER DETAILS%0A" +
+
+        "━━━━━━━━━━━━━━%0A" +
 
         "Name: " +
         name +
@@ -1469,8 +1364,8 @@ function placeOrder(event) {
         phone +
         "%0A" +
 
-        "Country: " +
-        country +
+        "City: " +
+        city +
         "%0A" +
 
         "Address: " +
@@ -1489,6 +1384,13 @@ function placeOrder(event) {
         "_blank"
     );
 }
+
+
+/* =====================================
+   START TOTAL
+===================================== */
+
+updateTotal();
 
 </script>
 
