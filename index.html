@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engo Sweden</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #17202a;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #17202a;
+        }
+
+        .hero {
+            padding: 100px 8%;
+            text-align: center;
+            background: #eaf2f8;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #17202a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        footer {
+            background: #17202a;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Engo Sweden</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to Engo Sweden</h1>
+    <p>Professional solutions with quality and reliability.</p>
+    <a class="button" href="#contact">Contact Us</a>
+</section>
+
+<section id="about">
+    <h2>About Engo Sweden</h2>
+    <p>
+        Engo Sweden is committed to providing professional,
+        reliable and high-quality services to our customers.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Professional Services</h3>
+            <p>Quality solutions designed for our customers.</p>
+        </div>
+
+        <div class="card">
+            <h3>Reliable Solutions</h3>
+            <p>We focus on reliability and customer satisfaction.</p>
+        </div>
+
+        <div class="card">
+            <h3>Customer Support</h3>
+            <p>We're here to help and answer your questions.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: your-email@example.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Engo Sweden. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
